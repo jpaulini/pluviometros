@@ -1,0 +1,27 @@
+application: pluviometros
+version: 3
+runtime: python
+api_version: 1
+threadsafe: no
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+  
+- url: /js
+  static_dir: js
+  
+- url: /img
+  static_dir: img
+
+- url: /css
+  static_dir: css
+
+- url: /remote_api
+  script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
+  login: admin
+
+- url: .*
+  script: main.py
+
+
