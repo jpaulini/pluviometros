@@ -81,7 +81,7 @@
 							});
 					})(i, marker);
 					// Extending the bounds object with each LatLng
-					bounds.extend(places[i]);
+					//bounds.extend(places[i]);
 			}
 			map.fitBounds(bounds);
 
@@ -94,7 +94,7 @@
 				lngSpan = northEast.lng() - southWest.lng();
 				// Reseting the canvas...
 				canvas.width = canvas.width;
-				//Getting how many lines I´ll draw
+				//Getting how many lines Iï¿½ll draw
 				var lngLines = lngSpan / 0.25; // each Cell represents 0.25 sq. degree
 				var latLines = latSpan / 0.25;
 				

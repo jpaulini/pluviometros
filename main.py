@@ -64,11 +64,6 @@ class RGHandler(webapp.RequestHandler):
         self.response.out.write(json.dumps(json.loads(content.content)))
 
 
-def main():
-    application = webapp.WSGIApplication([('/', MainHandler),('/srv1', RGHandler)],
+
+application = webapp.WSGIApplication([('/', MainHandler),('/srv1', RGHandler)],
                                          debug=True)
-    util.run_wsgi_app(application)
-
-
-if __name__ == '__main__':
-    main()
