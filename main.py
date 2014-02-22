@@ -17,10 +17,8 @@
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import util
 from google.appengine.api.urlfetch import fetch
-try:
-    import simplejson as json
-except:
-    from django.utils import simplejson as json
+import json
+
 
 class MainHandler(webapp.RequestHandler):
     def get(self):

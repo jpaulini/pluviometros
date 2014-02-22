@@ -83,7 +83,7 @@
 					// Extending the bounds object with each LatLng
 					//bounds.extend(places[i]);
 			}
-			map.fitBounds(bounds);
+			//map.fitBounds(bounds);
 
 			//Changing bounds have to refresh the canvas
 /*			google.maps.event.addListener(map, 'bounds_changed', function() {
